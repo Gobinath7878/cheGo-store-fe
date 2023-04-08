@@ -6,7 +6,6 @@ import {
   Collapse,
   Nav,
   NavItem,
-  NavLink,
   UncontrolledDropdown,
   DropdownToggle,
   DropdownMenu,
@@ -38,17 +37,17 @@ const Header = () => {
         <i className="fa-solid fa-burger"></i>
       </NavbarToggler>
       <Collapse isOpen={isOpen} navbar>
-        <Nav className="d-flex justify-content-end w-100 mx-5 flex-wrap my-2" navbar>
+        <Nav className="d-flex justify-content-end w-100 mx-5 flex-wrap my-3" navbar>
           <NavItem>
-            <NavLink className="text-success mx-2" href="/">Home</NavLink>
+            <Link className="text-success mx-2 py-3" to='/'>Home</Link>
           </NavItem>
           {!userInfo ? (
             <>
               <NavItem>
-                <NavLink className="text-success mx-2" href="/register?redirect=/">register</NavLink>
+                <Link className="text-success mx-2" to="/register?redirect=/">register</Link>
               </NavItem>
               <NavItem>
-                <NavLink className="text-success mx-2" href="/login">login</NavLink>
+                <Link className="text-success mx-2" to="/login">login</Link>
               </NavItem>
             </>
           ) : (
@@ -90,7 +89,7 @@ const Header = () => {
               </DropdownMenu>
             </>
           </UncontrolledDropdown>
-          <NavLink href="/cart" className="mx-3">
+          <Link to="/cart" className="mx-3">
           <i className="fa-solid fa-cart-shopping text-warning"></i>
            
             {/* {storedItems ? (
@@ -99,7 +98,7 @@ const Header = () => {
               <></>
             )} */}
          
-          </NavLink>
+          </Link>
         </Nav>
       </Collapse>
     </Navbar>
