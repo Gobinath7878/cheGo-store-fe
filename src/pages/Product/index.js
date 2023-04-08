@@ -117,11 +117,11 @@ function Product({ match, history }) {
                 {/* <h6 className="text-muted">Category: {product.category}</h6> */}
 
                 <h6 className="desc mt-4 mb-4">{product.description}</h6>
-                <div className="d-flex align-items-center mt-4 mb-3 justify-content-around flex-wrap">
-                  <h6 className="bg-success text-light px-5 py-3 rounded-5">
+                <div className="d-flex align-items-center mt-4 mb-3 justify-content-center gap-1 flex-wrap">
+                  <h6 className="bg-success text-light px-5 py-3 rounded-5 w-25">
                     healthy
                   </h6>
-                  <h6 className="bg-success text-light px-5 py-3 rounded-5">
+                  <h6 className="bg-success text-light px-5 py-3 rounded-5 w-25">
                     hygienic
                   </h6>
                   <h6 className="bg-success text-light px-5 py-3 rounded-5">

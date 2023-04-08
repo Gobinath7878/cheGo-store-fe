@@ -39,7 +39,10 @@ const Header = () => {
       <Collapse isOpen={isOpen} navbar>
         <Nav className="d-flex justify-content-end w-100 mx-5 flex-wrap my-3" navbar>
           <NavItem>
-            <Link className="text-success mx-2 py-3" to='/'>Home</Link>
+            <Link className="text-success mx-3 py-3" to='/'>Home</Link>
+          </NavItem>
+          <NavItem>
+            <Link className="text-success mx-3 py-3" to='/drinks'>Drinks</Link>
           </NavItem>
           {!userInfo ? (
             <>
@@ -57,7 +60,7 @@ const Header = () => {
             <>
               {userInfo ? (
                 <>
-                  <DropdownToggle nav caret className="text-success">
+                  <DropdownToggle nav caret className="text-success pt-0">
                     {userInfo.name}
                   </DropdownToggle>
                 </>

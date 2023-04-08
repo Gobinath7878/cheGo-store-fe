@@ -18,6 +18,7 @@ import OrderList from './pages/OrderList';
 import GenrePage from './pages/Genre'
 import SearchPage from './pages/Search';
 import Dashboard from './pages/Dashboard';
+import Drinks from './pages/Drinks/Drinks'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
@@ -31,6 +32,7 @@ const App = () => {
         <Header />
           <main>
               <Route path='/' exact component={HomePage} />
+              <Route path='/drinks' exact component={Drinks} />
               <Route path='/page/:page' exact component={HomePage} />
               <Route path='/product/:id' exact component={Product} />
               <Route path='/genre/:genre' component={GenrePage} />
