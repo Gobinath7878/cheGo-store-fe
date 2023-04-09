@@ -5,6 +5,7 @@ import Product from "../../components/Product";
 import { fetchProductsList } from "../../actions/productActions";
 import { Pagination, PaginationItem, PaginationLink } from "reactstrap";
 import GenreSelector from "../../components/GenreSelector";
+import Banner from "../../components/Banner/Banner";
 
 function HomePage({ match, history }) {
   const pageNumber = Number(match.params.page) || 1;
@@ -43,10 +44,9 @@ function HomePage({ match, history }) {
 
   return (
     <>
+    <Banner/>
       <Container className="p-5">
         <GenreSelector />
-
-
         {loading ? (
           <Container>
             <Row>

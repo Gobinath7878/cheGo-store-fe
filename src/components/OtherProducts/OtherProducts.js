@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Link } from "react-router-dom";
-import { Card, CardBody, CardTitle, Button,Container } from "reactstrap";
+import { Card, CardBody, CardTitle,Spinner, Button,Container } from "reactstrap";
 import { GiCoffeeCup } from "react-icons/gi";
 import Stars from "../Stars/index";
 
@@ -33,6 +33,7 @@ const OtherProducts = () => {
         <>
           
           <Container className="d-flex align-items-center justify-content-center flex-wrap gap-3 ">
+          {products.length ===0 ? <Spinner color='success'></Spinner> :<>
             {products.map(product => (
               <Link to={`/product/${product._id}`} key={product._id} className="bg-success my-5">
               <Card
@@ -86,8 +87,9 @@ const OtherProducts = () => {
               </Card>
             </Link>
             ))}
+            </>}
           </Container>
-          <div className='d-flex align-items-center justify-content-center flex-wrap'>
+          <div className='d-flex align-items-center justify-content-center flex-wrap mt-2 mb-5'>
             <button
             className='title p-2 rounded-2 border-0 text-light mx-3'
               onClick={() => setPage(prevPage => Math.max(prevPage - 1, 1))}

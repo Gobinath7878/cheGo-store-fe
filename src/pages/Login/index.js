@@ -37,7 +37,7 @@ const LoginPage = ({ location, history }) => {
           <Col lg='12'>
             <h5 className="title p-2 w-100 rounded-2 text-center text-light">SIGN IN</h5>
             {error && <Alert severity="error">{error}</Alert>}
-            {loading && <Alert severity="info">{error}</Alert>}
+            {loading && <Alert color='success'>Login success!</Alert>}
             <form onSubmit={submitHandler}>
                 <label htmlFor="email" className="my-2">Email</label>
               <Input
