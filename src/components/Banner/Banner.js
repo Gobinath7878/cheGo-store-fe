@@ -12,7 +12,7 @@ const Banner = () => {
       </Col>
       <Col lg='6' className='d-flex title justify-content-center flex-column flex-wrap p-0'>
         <div className='order-page px-5 py-5 banner-text'>
-        <h1 className='fw-bold text'>Welcome to che<span className='text-success rounded-2 py-0'>Go</span> store</h1>
+        <h3 className='fw-bold text'>Welcome to che<span className='text-success rounded-2 py-0'>Go</span> store</h3>
         <h5>Quench Your Thirst, Elevate Your Taste.</h5>
         <Button className='bg-success text-light px-5 mt-2' color='success' outline>
          <Link to='/drinks' className='text-light'>Explore <i className="fa-solid fa-arrow-right-long"></i></Link></Button>             
