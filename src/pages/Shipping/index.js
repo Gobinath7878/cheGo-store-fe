@@ -23,7 +23,7 @@ const ShippingPage = ({ history }) => {
     }
 
     return (
-        <div className='shipping-page'>
+        <div className='shipping-page mb-5'>
             <StepperNav stepNumber={1} />
            
             <Container className='d-flex align-items-center justify-content-center flex-wrap'>

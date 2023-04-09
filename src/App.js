@@ -20,6 +20,7 @@ import SearchPage from './pages/Search';
 import Dashboard from './pages/Dashboard';
 import Drinks from './pages/Drinks/Drinks'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import PaymentSuccess from './pages/PaymentSuccess/PaymentSuccess';
 
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
               <Route path='/product/:id' exact component={Product} />
               <Route path='/genre/:genre' component={GenrePage} />
               <Route path='/cart/:id?' component={CartPage} />
+              <Route path='/paymentsuccess' exact component={PaymentSuccess} />
               <Route path='/login' component={LoginPage} />
               <Route path='/register' component={RegisterPage} />
               <Route path='/profile' component={ProfilePage} />
@@ -51,8 +53,6 @@ const App = () => {
               <Route path='/search/:keyword' component={SearchPage} />
               <Route path='/dashboard' component={Dashboard} />
           </main>
-        
-      
       </div>
     </Router>
     

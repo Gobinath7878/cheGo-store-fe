@@ -140,14 +140,67 @@ object-fit: cover;
   content:'';
     position: absolute;
     bottom: 0;
-    top: 178px !important;
+    top: 174px !important;
     left: 0px;
-    width: 40px;
+    width: 60px;
     height: 100px;
     background:linear-gradient(145deg,#C6F6D5 0%,#C6F6D5 50%,transparent 55%,transparent);
 }
+.banner-text-2{
+  width: 400px;
+  text-align: center;
+}
+.banner-text-3{
+  width: 630px;
+  text-align: end;
+}
+/* typing css */
+
+.banner-text-container {
+  position: relative;
+}
+
+.typing-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space:nowrap;
+  width: 0;
+  animation: typing 3s steps(29) infinite;
+}
+
+.typed-text {
+  display: inline-block;
+}
+
+.cursor {
+  display: inline-block;
+  animation: cursor 0.8s infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes cursor {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* smoking css */
 
 
+
+/* responsive css */
 @media screen and (max-width:868px) {
   .res-cards{
    flex-wrap: wrap !important;
@@ -155,6 +208,11 @@ object-fit: cover;
 .banner-text{
   margin-right: 0px !important;
   margin: 50px !important;
+}
+.banner-text-2,
+.banner-text-3{
+  width: 100%;
+  text-align: center;
 }
   }
 

@@ -36,7 +36,7 @@ const Order = ({ match, history }) => {
   };
 
   if(paid){
-    history.push('/')
+    history.push('/paymentsuccess')
     localStorage.removeItem('cartItems');
   };
 
@@ -175,6 +175,7 @@ const Order = ({ match, history }) => {
                           stripeKey="pk_test_51MY3rESD5CXFUEJk5gBRbiZ7GsWtobaCZ54YWqqbqkOCHQUpgnkPMdhkYOJaaiGcb6N3kv8pucSVuF2L5aJXXoMb00b68E5ClN"
                           amount={order.totalPrice * 100}
                           currency="USD"
+                          email={userInfo.email}
                         />
                       )}
                     </Card>
