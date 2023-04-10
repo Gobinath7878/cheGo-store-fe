@@ -147,10 +147,7 @@ const ProfilePage = ({ history }) => {
                   <tbody>
                     {orders.map((order) => (
                       <tr
-                        key={order._id}
-                        onClick={() => {
-                          history.push(`/order/${order._id}`);
-                        }}
+                        key={order._id}                    
                         className="table-success"
                       >
                         <td className="text-center">{order._id}</td>
