@@ -18,7 +18,7 @@ const Banner = () => {
   }, []);
   return (
    <div>
-    <Row>
+    <Row className='m-0'>
     <Col lg='6' className='title'>
        <img src={BannerImg} ref={(el) => (genreRef.current[3] = el)} alt="Loading" className='bannerImg' />
       </Col>
