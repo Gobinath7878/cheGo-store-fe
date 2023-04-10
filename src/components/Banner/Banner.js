@@ -3,7 +3,6 @@ import {Row,Col,Button} from 'reactstrap'
 import BannerImg from '../../assets/banner-1.png'
 import { Link } from "react-router-dom";
 import { TweenMax, Power3 } from "gsap";
-
 const Banner = () => {
   let genreRef = useRef([]);
 
